@@ -78,7 +78,7 @@ def main():
     args = argp.parse_args()
 
 
-    check = nagiosplugin.Check(Mail(args), nagiosplugin.ScalarContext('status', '0:0', '1:2'), MailSummary())
+    check = nagiosplugin.Check(Mail(args), nagiosplugin.ScalarContext('status', '0:0', '0:1'), MailSummary())
 
     check.main()
 
